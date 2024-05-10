@@ -9,12 +9,15 @@ import RoutesIndex from './routes/RoutesIndex';
 
 function App() {
   return (
-    <div id='container'>
-      <BrowserRouter>
-        <NavBar />
-        <RoutesIndex />
-        <ToDoList />
-      </BrowserRouter>
+    <div className='container'>
+      <div className='row align-items-center'>
+        <BrowserRouter>
+          <NavBar />
+          {/* Mapeo de las rutas y páginas */}
+          <ToDoList />
+          <RoutesIndex />
+        </BrowserRouter>
+      </div>
     </div>
   );
 }

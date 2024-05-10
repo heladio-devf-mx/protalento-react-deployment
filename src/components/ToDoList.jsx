@@ -36,7 +36,13 @@ function ToDoList() {
           value={newToDo}
           onChange={(event) => setNewToDo(event.target.value)}
         />
-        <button onClick={handleAgregarToDo}>Agregar</button>
+        <button
+          type='button'
+          className='btn btn-outline-info'
+          onClick={handleAgregarToDo}
+        >
+          Agregar
+        </button>
       </header>
       <section>
         <ul style={ulStyles}>

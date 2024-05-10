@@ -36,8 +36,8 @@ const NavBar = () => {
               </NavLink>
             </li>
             <li className='nav-item'>
-              <NavLink className='nav-link disabled' aria-disabled='true'>
-                Próximamente
+              <NavLink className='nav-link link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover' to='/categories'>
+                Categorías
               </NavLink>
             </li>
           </ul>

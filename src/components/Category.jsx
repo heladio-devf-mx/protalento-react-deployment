@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams } from 'react-router-dom';
 const Category = () => {
   // Get the userId param from the URL.
   // /category/5

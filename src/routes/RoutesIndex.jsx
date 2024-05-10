@@ -16,6 +16,5 @@ export default function RoutesIndex() {
       <Route path='/categories/' element={<CategoryPage />} />
       <Route path='/category/:categoryId' element={<Category />} />
     </Routes>
-  // <div>RoutesIndex</div>;
   );
 }

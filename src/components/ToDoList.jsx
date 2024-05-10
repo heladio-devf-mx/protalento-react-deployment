@@ -16,10 +16,6 @@ function ToDoList() {
     setNewToDo('');
   }
 
-  // function handleDeleteToDo(toDo) {
-  //   deleteToDoItem(toDo);
-  // }
-
   const deleteToDoItem = (toDoPosition) => {
     // Delete for index
     const updatedToDoList = toDoList.filter((toDoItem, index) => index !== toDoPosition);
@@ -46,13 +42,11 @@ function ToDoList() {
       </header>
       <section>
         <ul style={ulStyles}>
-          {/* TO DO list */}
           {toDoList.map((toDo, index) => {
             return (
               <ToDoItem
                 // Operador ternario (expr. logica) ? <verdadero> : <falso>;
                 style={(index % 2) === 0 ? { backgroundColor: 'blanchedalmond' } : { backgroundColor: 'crimson' }}
-                // style={{ backgroundColor: 'blueviolet' }}
                 key={index}
                 description={toDo}
                 handleDeleteToDo={() => deleteToDoItem(index)}

@@ -1,6 +1,4 @@
 import './App.css';
-// import Home from './pages/Home';
-// import About from './pages/About';
 import NavBar from './components/NavBar';
 import ToDoList from './components/ToDoList';
 // Router
@@ -13,8 +11,8 @@ function App() {
       <div className='row align-items-center'>
         <BrowserRouter>
           <NavBar />
-          {/* Mapeo de las rutas y páginas */}
           <ToDoList />
+          {/* Mapeo de las rutas y páginas */}
           <RoutesIndex />
         </BrowserRouter>
       </div>

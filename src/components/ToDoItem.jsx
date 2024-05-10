@@ -1,6 +1,6 @@
-export default function ToDoItem({ description, handleDeleteToDo }) {
+export default function ToDoItem({ description, handleDeleteToDo, style }) {
   return (
-    <li>
+    <li style={{ ...style, listStyle: 'none' }}>
       {description}
       <button
         className='delete-button'

@@ -1,6 +1,11 @@
 import { useState } from 'react';
 import ToDoItem from './ToDoItem';
 
+const ulStyles = {
+  backgroundColor: 'lime',
+  padding: '15px'
+};
+
 function ToDoList() {
   const [newToDo, setNewToDo] = useState('');
   const [toDoList, setToDoList] = useState([]);
@@ -34,11 +39,14 @@ function ToDoList() {
         <button onClick={handleAgregarToDo}>Agregar</button>
       </header>
       <section>
-        <ul>
+        <ul style={ulStyles}>
           {/* TO DO list */}
           {toDoList.map((toDo, index) => {
             return (
               <ToDoItem
+                // Operador ternario (expr. logica) ? <verdadero> : <falso>;
+                style={(index % 2) === 0 ? { backgroundColor: 'blanchedalmond' } : { backgroundColor: 'crimson' }}
+                // style={{ backgroundColor: 'blueviolet' }}
                 key={index}
                 description={toDo}
                 handleDeleteToDo={() => deleteToDoItem(index)}
